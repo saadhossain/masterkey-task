@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.partition {
+    position: relative;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.controls {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.button {
+    padding: 2px 5px;
+    background: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.resizer {
+    position: absolute;
+    background: #000;
+    z-index: 10;
+}
+
+.resizer.horizontal {
+    height: 10px;
+    width: 100%;
+    bottom: 0;
+    cursor: ns-resize;
+}
+
+.resizer.vertical {
+    width: 10px;
+    height: 100%;
+    right: 0;
+    cursor: ew-resize;
+}

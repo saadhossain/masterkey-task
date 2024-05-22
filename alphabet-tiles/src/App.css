@@ -1,0 +1,42 @@
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile-container {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tile {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #61dafb;
+  border: 1px solid #000;
+  cursor: pointer;
+  user-select: none;
+}
+
+#outputString {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.clear-button {
+  margin-top: 20px;
+  padding: 15px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: orangered;
+  color:#fff;
+  font-weight: 600;
+  border:none;
+  border-radius: 10px;
+}
